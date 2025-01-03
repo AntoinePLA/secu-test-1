@@ -2,6 +2,7 @@
 using secu_test_1.Context;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity.Data;
 
 namespace secu_test_1.Controllers
 {
@@ -30,10 +31,11 @@ namespace secu_test_1.Controllers
             return NoContent();
         }
 
-        [HttpPost("Registe")]
-        public IActionResult Register([FromBody] User newUser)
+        [HttpPost("Login")]
+        public IActionResult Login()
         {
-            
+            var user = FakeDB.users;
+            return NoContent();
         }
 
     }

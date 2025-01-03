@@ -1,4 +1,6 @@
-﻿namespace secu_test_1.Model
+﻿using Microsoft.AspNetCore.Identity.Data;
+
+namespace secu_test_1.Model
 {
     public class User
     {
@@ -14,5 +16,10 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+
+        public Login(string email, string password)
+        {
+            if
+        };
     }
 }
